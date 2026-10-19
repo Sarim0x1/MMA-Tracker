@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+nav a:hover {
+    color: red;
+}
+
+.hero {
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero button {
+    margin-top: 25px;
+}
+
+.hero h2 {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    color: gray;
+}
+
+button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 12px 25px ;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.fights {
+    padding: 50px ;
+}
+
+.fights h2 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.fight-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.fight-card {
+    background: rgb(41, 42, 42);
+    border: 1px solid black;
+    padding: 30px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.fight-card p {
+    color: red;
+    font-weight: bold;
+}
+
+.fight-card span {
+    display: block;
+    margin-top: 15px;
+    color: gray;
+}
+
+footer{
+    text-align: center;
+    padding: 30px;
+    color: gray;
+    border-top: 1px solid black;
+}
+
+/*Record Section*/
+
+.fighters {
+    padding: 50px 20px ;
+    text-align: center;
+}
+
+.fighters h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.fighter-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.fighter-card {
+    background-color: black;
+    border: 1px solid gray;
+    padding: 25px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.fight-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.fight-card p {
+    margin: 10px 0;
+    color: white;
+}
+
+.fight-card p:nth-child(2) {
+    color: red;
+    font-weight: bold;
+}
+
+.fight-card p:nth-child(4) {
+    color: gray;
+}
+
+.fight-card p:last-child {
+    color: gray;
+}
+
+/*prediction section */
+
+.prediction {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.prediction h2 {
+    color: white;
+    margin-bottom:30px;
+}
+
+.prediction-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.prediction-card {
+    background-color: black;
+    border: 1px solid gray;
+    padding: 25px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.prediction-card h3 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.prediction-card button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.prediction-card button:hover {
+    background-color: gray;
+}
+
+.prediction-card p {
+    color: white;
+    margin-top: 15px;
+}
+
+.who-you-got {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+/* Quiz Section*/
+
+.quiz {
+    padding: 50px 20px ;
+    text-align: center;
+}
+
+.quiz h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.quiz > p {
+    color: white;
+    font-weight: bold;
+    margin-bottom:30px;
+}
+
+.quiz-card {
+    background-color: black;
+    border: 1px solid gray;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.quiz-card h3 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.quiz-card button {
+    display: block;
+    width: 100%;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.quiz-card button:hover {
+    background-color: gray;
+}
+
+.quiz-card {
+    display: none;
+}
+
+.quiz-card:first-of-type {
+    display: block;
+}

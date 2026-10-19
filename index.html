@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> MMA </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1> UFC FIGHT TRACKER</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Fighter</a>
+            <a href="#">Rankings</a>
+            <a href="#">Fight Cards</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h2> ULTIMATE FIGHTING CHAMPIONSHIP </h2>
+            <P>Upcoming Fight, Records, Predictions, And More...</P>
+            <button id="exploreBtn">Explore Fight</button>
+        </section>
+
+        <section class="fights">
+            <h2>Upcoming Fights</h2>
+
+            <div class="fight-container">
+
+                <div class="fight-card">
+                    <h3>Islam Makhachev</h3>
+                    <p>Vs</p>
+                    <h3>Ian Garry</h3>
+                    <span>Welterweight</span>
+                </div>
+
+                <div class="fight-card">
+                    <h3>Arman Tsarukyan</h3>
+                    <p>Vs</p>
+                    <h3>Mauricio Ruffy</h3>
+                    <span>Lightweight</span>
+                </div>
+
+                <div class="fight-card">
+                    <h3>Shavkat Rakhmonov</h3>
+                    <p>Vs</p>
+                    <h3>Michael Morales</h3>
+                    <span>Welterweight</span>
+                </div>
+
+                <div class="fight-card">
+                    <h3>Ilia Topuria</h3>
+                    <p>Vs</p>
+                    <h3>Paddy Pimblett</h3>
+                    <span>Lightweight</span>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="fighters">
+
+            <h2> Records </h2>
+            <div class="fighter-container">
+
+                <div class="fighter-card">
+                    <h3>Islam Makhachev</h3>
+                    <p>Record : 29-1 </p>
+                    <p>Vs</p>
+                    <h3>Ian Garry</h3>
+                    <p>Record : 17-2 </p>
+                    <p>Welterweight</p>
+                </div>
+
+                <div class="fighter-card">
+                    <h3>Arman Tsarukyan</h3>
+                    <p>Record : 24-3 </p>
+                    <p>Vs</p>
+                    <h3>Mauricio Ruffy</h3>
+                    <p>Record : 14-3 </p>
+                    <p>Lightweight</p>
+                </div>
+
+                <div class="fighter-card">
+                    <h3>Shavkat Rakhmonov </h3>
+                    <p>Record : 19-0 </p>
+                    <p>Vs</p>
+                    <h3>Michael Morales</h3>
+                    <p>Record : 19-0 </p>
+                    <p>Welterweight</p>
+                </div>
+
+                <div class="fighter-card">
+                    <h3>Ilia Topuria</h3>
+                    <p>Record : 17-1 </p>
+                    <p>Vs</p>
+                    <h3>Paddy Pimblett</h3>
+                    <p>Record : 24-4 </p>
+                    <p>Lightweight</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="prediction">
+
+            <h2>Fight Prediction</h2>
+            <p class="who-you-got">Who You Got?</p>
+
+            <div class="prediction-container">
+
+                <div class="prediction-card">
+                    <h3>Islam Makhachev vs Ian Garry </h3>
+                    <button>Islam Makhachev</button>
+                    <button>Ian Garry</button>
+                    <p class="result"></p>
+                    <p class="votes">Votes: 0</p>
+                </div>
+
+                <div class="prediction-card">
+                    <h3>Arman Tsarukyan vs Mauricio Ruffy </h3>
+                    <button>Arman Tsarukyan</button>
+                    <button>Mauricio Ruffy </button>
+                    <p class="result"></p>
+                    <p class="votes">Votes: 0</p>
+                </div>
+
+                <div class="prediction-card">
+                    <h3>Shavkat Rakhmonov vs Michael Morales </h3>
+                    <button>Shavkat Rakhmonov</button>
+                    <button>Michael Morales</button>
+                    <p class="result"></p>
+                    <p class="votes">Votes: 0</p>
+                </div>
+
+                <div class="prediction-card">
+                    <h3>Ilia Topuria vs Paddy Pimblett </h3>
+                    <button>Ilia Topuria</button>
+                    <button>Paddy Pimblett</button>
+                    <p class="result"></p>
+                    <p class="votes">Votes: 0</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="quiz">
+
+            <h2>MMA Quiz</h2>
+            <p>Test Your MMA Knowledge</p>
+
+            <div class="quiz-card">
+                <h3>Who holds the record of the longest winning streak in UFC history?</h3>
+                <button>Anderson Silva</button>
+                <button>Islam Makhachev</button>
+                <button>Kamaru Usman</button>
+                <button>Jon Jones</button>
+            </div>
+
+            <div class="quiz-card">
+                <h3>Which UFC fighter is famously known as "THE HIGHLIGHT"?</h3>
+                <button>Dustin Poirier</button>
+                <button>Justin Gaethje</button>
+                <button>Max Holloway</button>
+                <button>Tony Ferguson</button>
+            </div>
+
+            <div class="quiz-card">
+                <h3>Who holds the record of the most title fight in UFC history?</h3>
+                <button>Georges St-Pierre</button>
+                <button>Anderson Silva</button>
+                <button>Jon Jones</button>
+                <button>Demetrious Johnson</button>
+            </div>
+
+            <div class="quiz-card">
+                <h3>Who was the first fighter to simultaneously hold UFC titles in two different weight classes?</h3>
+                <button>Daniel Cormier</button>
+                <button>Conor Mcgregor</button>
+                <button>Amanda Nunes</button>
+                <button>Henry Cejudo</button>
+            </div>
+
+            <div class="quiz-card">
+                <h3>Which UFC fighter is famously known as "THE DIAMOND"?</h3>
+                <button>Charles Oliveira</button>
+                <button>Justin Gaethje</button>
+                <button>Dustin Poirier</button>
+                <button>Max Holloway</button>
+            </div>
+
+            <button class="next-btn">Next Question</button>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p> 2026 MMA Fight tracker </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
