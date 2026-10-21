@@ -137,26 +137,41 @@ restartButton.addEventListener("click", function () {
 
 const recordButtons = document.querySelectorAll(".view-records");
 
-recordButtons.forEach(function (button) {
+const recordFighters = document.querySelectorAll(".record-fighter");
+
+recordButtons.forEach(function (button, index) {
 
     button.addEventListener("click", function () {
 
-        const card = button.parentElement;
+        document.getElementById("recordPanel").style.display = "block";
 
-        const fighterName = card.querySelector("h3").innerText;
+        recordFighters.forEach(function (fighter) {
+            fighter.style.display = "none";
+        });
 
-        alert(
-            "Fighter Records\n\n" + 
-            "Name: " + fighterName + "\n\n"
-            +
-            "wins by KO/TKO: 10\n" +
-            "wins by Submission: 5\n" +
-            "wins by Decision: 4\n" +
-            "Fighting Style: Striker\n" +
-            "Reach: 75 inches\n" +
-            "Height: 6'0\"\n" +
-            "Weight Class: Lightweight\n"
-        );
+        if (index === 0) {
+            recordFighters[0].style.display = "block";
+
+            recordFighters[1].style.display = "block";
+        }
+
+        if (index === 1) {
+            recordFighters[2].style.display = "block";
+
+            recordFighters[3].style.display = "block";
+        }
+
+        if (index === 2) {
+            recordFighters[4].style.display = "block";
+
+            recordFighters[5].style.display = "block";
+        }
+
+        if (index === 3) {
+            recordFighters[6].style.display = "block";
+
+            recordFighters[7].style.display = "block";
+        }
 
     });
 

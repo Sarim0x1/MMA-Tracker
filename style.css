@@ -314,3 +314,42 @@ footer{
     color: skyblue;
     transition: 0.3s;
 }
+
+#recordPanel {
+    display: none;
+    margin-top: 12px;
+    padding: 30px;
+    max-width: 658px;
+    background-color: black;
+    border: 1px solid gray;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.record-fighter {
+    display: inline-block;
+    width: 40%;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.record-fighter h2 {
+    color: red;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.record-fighter p {
+    color: white;
+    margin-bottom: 12px 0;
+    font-size: 16px;
+}
+
+.record-fighter span {
+    color: gray;
+}
