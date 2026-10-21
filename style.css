@@ -321,16 +321,26 @@ footer{
     padding: 30px;
     max-width: 658px;
     background-color: black;
-    border: 1px solid gray;
+    border: 1px solid black;
     border-radius: 12px;
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#recordPanel::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .record-fighter {
-    display: inline-block;
+    display: none;
+    float: left;
     width: 40%;
-    margin: 10px;
-    padding: 15px;
+    margin: 29px;
+    padding: 19px;
     border: 1px solid gray;
     border-radius: 10px;
     text-align: center;
@@ -352,4 +362,90 @@ footer{
 
 .record-fighter span {
     color: gray;
+}
+
+.ranking-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.ranking-section h2 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.ranking-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.ranking-card {
+    background-color: black;
+    border: 1px solid gray;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.ranking-card:nth-child(1) .rank,
+.ranking-card:nth-child(2) .rank,
+.ranking-card:nth-child(3) .rank {
+
+    font-size: 20px;
+    padding: 8px 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.ranking-card:nth-child(1) .rank {
+    background-color: gold;
+    color: black;
+}
+
+.ranking-card:nth-child(2) .rank {
+    background-color: silver;
+    color: black;
+}
+
+.ranking-card:nth-child(3) .rank {
+    background-color: #cd7f32; /* Bronze color */
+    color: black;
+}
+
+.ranking-card h3 {
+    color: white;
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+.ranking-card p {
+    color: gray;
+    margin-bottom: 8px;
+}
+
+.ranking-card p:last-child {
+    color: red;
+    font-weight: bold;
+}
+
+.ranking-card {
+    transition: 0.3s;
+}
+
+.ranking-card:hover {
+    border-color: red;
+    transform: translateY(-8px);
+}
+
+.ranking-card:nth-child(4) {
+    padding-top: 35px;
+}
+
+.ranking-card:nth-child(5) {
+    padding-top: 35px;
 }
