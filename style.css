@@ -45,6 +45,11 @@ nav a:hover {
     margin-top: 25px;
 }
 
+.hero button:hover {
+    background: gray;
+    transition: 0.3s;
+}
+
 .hero h2 {
     font-size: 50px;
     margin-bottom: 25px;
@@ -273,4 +278,39 @@ footer{
 
 .quiz-card:first-of-type {
     display: block;
+}
+
+.next-btn:hover {
+    background-color: gray;
+    transition: 0.3s;
+}
+
+.quiz-result {
+    display: none;
+    margin-top: 20px;
+}
+
+.quiz-result button {
+    margin-top: 15px;
+}
+
+#restartQuiz:hover {
+    background-color: gray;
+    transition: 0.3s;
+}
+
+.view-records {
+    background-color: black;
+    border: none;
+    padding: 0px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: red;
+    cursor: pointer;
+}
+
+.view-records:hover {
+    background: none;
+    color: skyblue;
+    transition: 0.3s;
 }

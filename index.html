@@ -79,6 +79,7 @@
                     <h3>Ian Garry</h3>
                     <p>Record : 17-2 </p>
                     <p>Welterweight</p>
+                    <button class="view-records">View Stats</button>
                 </div>
 
                 <div class="fighter-card">
@@ -88,6 +89,7 @@
                     <h3>Mauricio Ruffy</h3>
                     <p>Record : 14-3 </p>
                     <p>Lightweight</p>
+                    <button class="view-records">View Stats</button>
                 </div>
 
                 <div class="fighter-card">
@@ -97,6 +99,7 @@
                     <h3>Michael Morales</h3>
                     <p>Record : 19-0 </p>
                     <p>Welterweight</p>
+                    <button class="view-records">View Stats</button>
                 </div>
 
                 <div class="fighter-card">
@@ -106,7 +109,37 @@
                     <h3>Paddy Pimblett</h3>
                     <p>Record : 24-4 </p>
                     <p>Lightweight</p>
+                    <button class="view-records">View Stats</button>
                 </div>
+
+            </div>
+
+            <div id="recordPanel">
+
+                <div class="record-fighter">
+
+                    <h2 id="fighter1Name">Islam Makhachev</h2>
+                    <p>Record: <span id="fighter1Record">29-1</span></p>
+                    <p>KO/TKO Wins: <span id="fighter1KO">0</span></p>
+                    <p>Submissions Wins: <span id="fighter1Submissions">0</span></p>
+                    <p>Decision Wins: <span id="fighter1Decisions">0</span></p>
+                    <p>Fighting Style: <span id="fighter1Style">Wrestling</span></p>
+                    <p>Reach: <span id="fighter1Reach">74"</span></p>
+                    <p>Height: <span id="fighter1Height">5'11"</span></p>
+                    <p>Weight: <span id="fighterWeight">170 lbs</span></p>
+                </div>
+
+                <div class="record-fighter">
+
+                    <h2 id="fighter2Name">Ian Garry</h2>
+                    <p>Record: <span id="fighter2Record">17-2</span></p>
+                    <p>KO/TKO Wins: <span id="fighter2KO">0</span></p>
+                    <p>Submissions Wins: <span id="fighter2Submissions">0</span></p>
+                    <p>Decision Wins: <span id="fighter2Decisions">0</span></p>
+                    <p>Fighting Style: <span id="fighter2Style">Boxing</span></p>
+                    <p>Reach: <span id="fighter2Reach">79"</span></p>
+                    <p>Height: <span id="fighter2Height">6'3"</span></p>
+                    <p>Weight: <span id="fighter2Weight">170 lbs</span></p>
 
             </div>
 
@@ -201,6 +234,12 @@
             </div>
 
             <button class="next-btn">Next Question</button>
+
+            <div class="quiz-result">
+                <h3>Quiz Completed</h3>
+                <p id="score">Your Score: <span id="finalScore">0</span> / 5</p>
+                <button id="restartQuiz">Restart Quiz</button>
+            </div>
 
         </section>
 

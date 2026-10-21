@@ -102,6 +102,7 @@ quizCards.forEach(function (card) {
 const nextButton = document.querySelector(".next-btn");
 
 nextButton.addEventListener("click", function () {
+
     quizCards[currentQuestion].style.display = "none";
 
     currentQuestion++;
@@ -110,6 +111,53 @@ nextButton.addEventListener("click", function () {
         quizCards[currentQuestion].style.display = "block";
     }
     else {
-        alert("Quiz Completed! Your Score: " + "/5");
+        document.querySelector(".quiz-result").style.display = "block";
+        document.getElementById("finalScore").innerText = score;
     }
+
+});
+
+const restartButton = document.getElementById("restartQuiz");
+
+restartButton.addEventListener("click", function () {
+
+    currentQuestion = 0;
+    score = 0;
+
+    document.getElementById("finalScore").textContent = score;
+
+    document.getElementById("quizResult").style.display = "none";
+
+    quizCards.forEach(function (card) {
+        card.style.display = "none";
+    });
+
+    quizCards[0].style.display = "block";
+});
+
+const recordButtons = document.querySelectorAll(".view-records");
+
+recordButtons.forEach(function (button) {
+
+    button.addEventListener("click", function () {
+
+        const card = button.parentElement;
+
+        const fighterName = card.querySelector("h3").innerText;
+
+        alert(
+            "Fighter Records\n\n" + 
+            "Name: " + fighterName + "\n\n"
+            +
+            "wins by KO/TKO: 10\n" +
+            "wins by Submission: 5\n" +
+            "wins by Decision: 4\n" +
+            "Fighting Style: Striker\n" +
+            "Reach: 75 inches\n" +
+            "Height: 6'0\"\n" +
+            "Weight Class: Lightweight\n"
+        );
+
+    });
+
 });
